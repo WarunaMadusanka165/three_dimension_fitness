@@ -1,6 +1,10 @@
 // ignore_for_file: file_names, unused_local_variable
 
 import 'package:flutter/material.dart';
+import 'package:three_dimension_fitness/screens/becomeFlexibleScreen.dart';
+import 'package:three_dimension_fitness/screens/bodyShapeScreen.dart';
+import 'package:three_dimension_fitness/screens/improveCardioScreen.dart';
+import 'package:three_dimension_fitness/screens/loseFatScreen.dart';
 
 class Goal extends StatefulWidget {
   const Goal({Key? key}) : super(key: key);
@@ -64,7 +68,13 @@ class _GoalState extends State<Goal> {
                     Padding(
                       padding: const EdgeInsets.only(right: 15.0),
                       child: IconButton(
-                          onPressed: () => {},
+                          onPressed: () => {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => (LoseFat())),
+                                )
+                              },
                           icon: const Icon(
                             Icons.arrow_forward_ios_rounded,
                             size: 15,
@@ -106,7 +116,13 @@ class _GoalState extends State<Goal> {
                     Padding(
                       padding: const EdgeInsets.only(right: 15.0),
                       child: IconButton(
-                          onPressed: () => {},
+                          onPressed: () => {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => (ImproveCardio())),
+                                )
+                              },
                           icon: const Icon(
                             Icons.arrow_forward_ios_rounded,
                             size: 15,
@@ -147,91 +163,13 @@ class _GoalState extends State<Goal> {
                     Padding(
                       padding: const EdgeInsets.only(right: 15.0),
                       child: IconButton(
-                          onPressed: () => {},
-                          icon: const Icon(
-                            Icons.arrow_forward_ios_rounded,
-                            size: 15,
-                            color: Color.fromRGBO(255, 255, 255, 1),
-                          )),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.only(top: 5.0, left: 10, right: 10),
-            child: Container(
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(15),
-                color: const Color.fromRGBO(20, 20, 20, 1),
-              ),
-              child: Padding(
-                padding: const EdgeInsets.only(top: 8.0, bottom: 8),
-                child: Row(
-                  children: [
-                    const Padding(
-                        padding: EdgeInsets.only(left: 15.0),
-                        child: Icon(
-                          Icons.ac_unit,
-                          color: Color.fromRGBO(255, 104, 26, 1),
-                        )),
-                    const Padding(
-                      padding: EdgeInsets.only(left: 15.0),
-                      child: Text(
-                        'Ger Stronger',
-                        style: TextStyle(
-                            fontSize: 15,
-                            color: Color.fromRGBO(164, 164, 164, 1)),
-                      ),
-                    ),
-                    const Spacer(),
-                    Padding(
-                      padding: const EdgeInsets.only(right: 15.0),
-                      child: IconButton(
-                          onPressed: () => {},
-                          icon: const Icon(
-                            Icons.arrow_forward_ios_rounded,
-                            size: 15,
-                            color: Color.fromRGBO(255, 255, 255, 1),
-                          )),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.only(top: 5.0, left: 10, right: 10),
-            child: Container(
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(15),
-                color: const Color.fromRGBO(20, 20, 20, 1),
-              ),
-              child: Padding(
-                padding: const EdgeInsets.only(top: 8.0, bottom: 8),
-                child: Row(
-                  children: [
-                    const Padding(
-                        padding: EdgeInsets.only(left: 15.0),
-                        child: Icon(
-                          Icons.access_time_filled_sharp,
-                          color: Color.fromRGBO(255, 104, 26, 1),
-                        )),
-                    const Padding(
-                      padding: EdgeInsets.only(left: 15.0),
-                      child: Text(
-                        'Build Muscle',
-                        style: TextStyle(
-                            fontSize: 15,
-                            color: Color.fromRGBO(164, 164, 164, 1)),
-                      ),
-                    ),
-                    const Spacer(),
-                    Padding(
-                      padding: const EdgeInsets.only(right: 15.0),
-                      child: IconButton(
-                          onPressed: () => {},
+                          onPressed: () => {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => (BodyShape())),
+                                )
+                              },
                           icon: const Icon(
                             Icons.arrow_forward_ios_rounded,
                             size: 15,
@@ -272,89 +210,13 @@ class _GoalState extends State<Goal> {
                     Padding(
                       padding: const EdgeInsets.only(right: 15.0),
                       child: IconButton(
-                          onPressed: () => {},
-                          icon: const Icon(
-                            Icons.arrow_forward_ios_rounded,
-                            size: 15,
-                            color: Color.fromRGBO(255, 255, 255, 1),
-                          )),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.only(top: 5.0, left: 10, right: 10),
-            child: Container(
-              decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(15),
-                  color: const Color.fromRGBO(20, 20, 20, 1)),
-              child: Padding(
-                padding: const EdgeInsets.only(top: 8.0, bottom: 8),
-                child: Row(
-                  children: [
-                    const Padding(
-                        padding: EdgeInsets.only(left: 15.0),
-                        child: Icon(
-                          Icons.account_circle_sharp,
-                          color: Color.fromRGBO(255, 104, 26, 1),
-                        )),
-                    const Padding(
-                      padding: EdgeInsets.only(left: 15.0),
-                      child: Text(
-                        'General Fitness',
-                        style: TextStyle(
-                            fontSize: 15,
-                            color: Color.fromRGBO(164, 164, 164, 1)),
-                      ),
-                    ),
-                    const Spacer(),
-                    Padding(
-                      padding: const EdgeInsets.only(right: 15.0),
-                      child: IconButton(
-                          onPressed: () => {},
-                          icon: const Icon(
-                            Icons.arrow_forward_ios_rounded,
-                            size: 15,
-                            color: Color.fromRGBO(255, 255, 255, 1),
-                          )),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.only(top: 5.0, left: 10, right: 10),
-            child: Container(
-              decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(15),
-                  color: const Color.fromRGBO(20, 20, 20, 1)),
-              child: Padding(
-                padding: const EdgeInsets.only(top: 8.0, bottom: 8),
-                child: Row(
-                  children: [
-                    const Padding(
-                        padding: EdgeInsets.only(left: 15.0),
-                        child: Icon(
-                          Icons.add_alert,
-                          color: Color.fromRGBO(255, 104, 26, 1),
-                        )),
-                    const Padding(
-                      padding: EdgeInsets.only(left: 15.0),
-                      child: Text(
-                        'Increase Stemina',
-                        style: TextStyle(
-                            fontSize: 15,
-                            color: Color.fromRGBO(164, 164, 164, 1)),
-                      ),
-                    ),
-                    const Spacer(),
-                    Padding(
-                      padding: const EdgeInsets.only(right: 15.0),
-                      child: IconButton(
-                          onPressed: () => {},
+                          onPressed: () => {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => (BecomeFlexible())),
+                                )
+                              },
                           icon: const Icon(
                             Icons.arrow_forward_ios_rounded,
                             size: 15,

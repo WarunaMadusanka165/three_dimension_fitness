@@ -1,5 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.three_dimension_fitness">
+    <uses-permission android:name="android.permission.INTERNET" />
    <application
         android:label="three_dimension_fitness"
         android:name="${applicationName}"
