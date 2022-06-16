@@ -96,7 +96,6 @@
 import 'package:flutter/material.dart';
 import 'package:three_dimension_fitness/screens/improveCardioScreen.dart';
 
-
 class ImproveCardio2 extends StatefulWidget {
   const ImproveCardio2({Key? key}) : super(key: key);
 
@@ -117,7 +116,8 @@ class _ImproveCardio2State extends State<ImproveCardio2> {
             Container(
               decoration: BoxDecoration(
                   image: const DecorationImage(
-                      image: AssetImage("assets/improveCardio.jpg"),
+                      image: NetworkImage(
+                          "https://firebasestorage.googleapis.com/v0/b/three-dimension-fitness.appspot.com/o/improveCardio%2FimproveCardio.jpg?alt=media&token=3e74d0cc-e84a-419f-9a56-7afd44d58a9a"),
                       fit: BoxFit.cover)),
             ),
             Align(
@@ -154,7 +154,8 @@ class _ImproveCardio2State extends State<ImproveCardio2> {
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(12),
                         image: const DecorationImage(
-                            image: AssetImage("assets/champagne.jpg"),
+                            image: NetworkImage(
+                                "https://firebasestorage.googleapis.com/v0/b/three-dimension-fitness.appspot.com/o/improveCardio%2Fchampagne.jpg?alt=media&token=9325662e-255d-4bcb-94bb-2d0882882815"),
                             fit: BoxFit.cover)),
                     width: width / 2 - 20,
                     height: height * 0.17,
@@ -182,7 +183,8 @@ class _ImproveCardio2State extends State<ImproveCardio2> {
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(12),
                         image: const DecorationImage(
-                            image: AssetImage("assets/steak.jpg"),
+                            image: NetworkImage(
+                                "https://firebasestorage.googleapis.com/v0/b/three-dimension-fitness.appspot.com/o/improveCardio%2Fsteak.jpg?alt=media&token=bc22e8ed-c6d7-4f07-b589-69bac6d7b724"),
                             fit: BoxFit.cover)),
                     width: width / 2 - 20,
                     height: height * 0.17,
@@ -210,7 +212,8 @@ class _ImproveCardio2State extends State<ImproveCardio2> {
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(12),
                         image: const DecorationImage(
-                            image: AssetImage("assets/tofu.jpg"),
+                            image: NetworkImage(
+                                "https://firebasestorage.googleapis.com/v0/b/three-dimension-fitness.appspot.com/o/improveCardio%2Ftofu.jpg?alt=media&token=21af3f35-4a83-47cd-9533-9dcce376f512"),
                             fit: BoxFit.cover)),
                     width: width / 2 - 20,
                     height: height * 0.17,

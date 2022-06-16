@@ -23,8 +23,8 @@ class _BecomeFlexibleState extends State<BecomeFlexible> {
                 Container(
                   height: 250,
                   width: width,
-                  child: Image.asset(
-                    "assets/loseFat.jpg",
+                  child: Image.network(
+                    "https://firebasestorage.googleapis.com/v0/b/three-dimension-fitness.appspot.com/o/bodyShape%2FloseFat.jpg?alt=media&token=c5c41d6e-f716-4da3-b379-9cb6afdf0950",
                     fit: BoxFit.cover,
                   ),
                 ),
@@ -104,7 +104,8 @@ class _BecomeFlexibleState extends State<BecomeFlexible> {
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(12),
                       image: const DecorationImage(
-                          image: AssetImage("assets/blueBerry.jpg"),
+                          image: NetworkImage(
+                              "https://firebasestorage.googleapis.com/v0/b/three-dimension-fitness.appspot.com/o/becomeFlexible%2FblueBerry.jpg?alt=media&token=d7ef8ec7-9b9c-4a7e-aab7-c9dc72aef9a9"),
                           fit: BoxFit.cover)),
                 ),
                 SizedBox(
@@ -126,7 +127,8 @@ class _BecomeFlexibleState extends State<BecomeFlexible> {
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(12),
                       image: const DecorationImage(
-                          image: AssetImage("assets/turmeric.jpg"),
+                          image: NetworkImage(
+                              "https://firebasestorage.googleapis.com/v0/b/three-dimension-fitness.appspot.com/o/becomeFlexible%2Fturmeric.jpg?alt=media&token=9a91e6fc-4c13-4198-8ece-6225ea9f634c"),
                           fit: BoxFit.cover)),
                 ),
                 SizedBox(
@@ -148,7 +150,8 @@ class _BecomeFlexibleState extends State<BecomeFlexible> {
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(12),
                       image: const DecorationImage(
-                          image: AssetImage("assets/ginger.jpg"),
+                          image: NetworkImage(
+                              "https://firebasestorage.googleapis.com/v0/b/three-dimension-fitness.appspot.com/o/becomeFlexible%2Fginger.jpg?alt=media&token=a00623e8-c6dc-46c1-a8c3-35e19c9bfc52"),
                           fit: BoxFit.cover)),
                 ),
                 SizedBox(
@@ -170,7 +173,8 @@ class _BecomeFlexibleState extends State<BecomeFlexible> {
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(12),
                       image: const DecorationImage(
-                          image: AssetImage("assets/freshFish.jpg"),
+                          image: NetworkImage(
+                              "https://firebasestorage.googleapis.com/v0/b/three-dimension-fitness.appspot.com/o/becomeFlexible%2FfreshFish.jpg?alt=media&token=faca149b-4ffc-44e7-a6e3-0a3c684dfe3c"),
                           fit: BoxFit.cover)),
                 ),
                 SizedBox(
@@ -192,7 +196,8 @@ class _BecomeFlexibleState extends State<BecomeFlexible> {
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(12),
                       image: const DecorationImage(
-                          image: AssetImage("assets/orange.jpg"),
+                          image: NetworkImage(
+                              "https://firebasestorage.googleapis.com/v0/b/three-dimension-fitness.appspot.com/o/becomeFlexible%2Forange.jpg?alt=media&token=04c73410-5d25-469d-8e56-5a83d00720c0"),
                           fit: BoxFit.cover)),
                 ),
                 SizedBox(
@@ -214,7 +219,8 @@ class _BecomeFlexibleState extends State<BecomeFlexible> {
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(12),
                       image: const DecorationImage(
-                          image: AssetImage("assets/watermelon.jpg"),
+                          image: NetworkImage(
+                              "https://firebasestorage.googleapis.com/v0/b/three-dimension-fitness.appspot.com/o/becomeFlexible%2Fwatermelon.jpg?alt=media&token=d06c6c59-d72d-40d2-a7d7-5cddf67b1f69"),
                           fit: BoxFit.cover)),
                 ),
                 SizedBox(

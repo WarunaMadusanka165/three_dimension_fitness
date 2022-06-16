@@ -197,7 +197,8 @@ class _NewState extends State<New> {
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(20),
                       image: const DecorationImage(
-                          image: AssetImage("assets/freeStyle 1.jpg"),
+                          image: NetworkImage(
+                              "https://firebasestorage.googleapis.com/v0/b/three-dimension-fitness.appspot.com/o/freeStyle%2FfreeStyle%201.jpg?alt=media&token=b7316641-0930-456f-b25b-31b580709ab0"),
                           fit: BoxFit.cover)),
                   child:
                       Stack(alignment: Alignment.bottomLeft, children: const [
@@ -217,7 +218,8 @@ class _NewState extends State<New> {
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(20),
                       image: const DecorationImage(
-                          image: AssetImage("assets/freeStyle 2.jpeg"),
+                          image: NetworkImage(
+                              "https://firebasestorage.googleapis.com/v0/b/three-dimension-fitness.appspot.com/o/freeStyle%2FfreeStyle%202.jpeg?alt=media&token=3a4eea5b-5528-4ca4-b1fc-019bced51029"),
                           fit: BoxFit.cover)),
                   child:
                       Stack(alignment: Alignment.bottomLeft, children: const [
@@ -237,7 +239,8 @@ class _NewState extends State<New> {
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(20),
                       image: const DecorationImage(
-                          image: AssetImage("assets/freeStyle 3.jpg"),
+                          image: NetworkImage(
+                              "https://firebasestorage.googleapis.com/v0/b/three-dimension-fitness.appspot.com/o/freeStyle%2FfreeStyle%203.jpg?alt=media&token=8ddfda84-0393-4b26-bbc2-e87e4aab2fba"),
                           fit: BoxFit.cover)),
                   child:
                       Stack(alignment: Alignment.bottomLeft, children: const [
@@ -257,7 +260,8 @@ class _NewState extends State<New> {
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(20),
                       image: const DecorationImage(
-                          image: AssetImage("assets/freeStyle 4.png"),
+                          image: NetworkImage(
+                              "https://firebasestorage.googleapis.com/v0/b/three-dimension-fitness.appspot.com/o/freeStyle%2FfreeStyle%204.png?alt=media&token=58179b6a-02fa-442c-8fe1-0ff053bce782"),
                           fit: BoxFit.cover)),
                   child:
                       Stack(alignment: Alignment.bottomLeft, children: const [
@@ -277,7 +281,8 @@ class _NewState extends State<New> {
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(20),
                       image: const DecorationImage(
-                          image: AssetImage("assets/freeStyle 5.jpg"),
+                          image: NetworkImage(
+                              "https://firebasestorage.googleapis.com/v0/b/three-dimension-fitness.appspot.com/o/freeStyle%2FfreeStyle%205.jpg?alt=media&token=36ff1dee-0860-437f-8eb0-6cfb74c989fa"),
                           fit: BoxFit.cover)),
                   child:
                       Stack(alignment: Alignment.bottomLeft, children: const [
@@ -297,7 +302,8 @@ class _NewState extends State<New> {
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(20),
                       image: const DecorationImage(
-                          image: AssetImage("assets/freeStyle 6.jpg"),
+                          image: NetworkImage(
+                              "https://firebasestorage.googleapis.com/v0/b/three-dimension-fitness.appspot.com/o/freeStyle%2FfreeStyle%206.jpg?alt=media&token=66cd75ab-7054-4fa0-817b-aa6120794972"),
                           fit: BoxFit.cover)),
                   child:
                       Stack(alignment: Alignment.bottomLeft, children: const [
@@ -317,7 +323,8 @@ class _NewState extends State<New> {
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(20),
                       image: const DecorationImage(
-                          image: AssetImage("assets/freeStyle 7.jpg"),
+                          image: NetworkImage(
+                              "https://firebasestorage.googleapis.com/v0/b/three-dimension-fitness.appspot.com/o/freeStyle%2FfreeStyle%207.jpg?alt=media&token=5bc0e0a9-754a-4aa6-94d6-84a236632c07"),
                           fit: BoxFit.cover)),
                   child:
                       Stack(alignment: Alignment.bottomLeft, children: const [
@@ -337,7 +344,8 @@ class _NewState extends State<New> {
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(20),
                       image: const DecorationImage(
-                          image: AssetImage("assets/freeStyle 8.jpg"),
+                          image: NetworkImage(
+                              "https://firebasestorage.googleapis.com/v0/b/three-dimension-fitness.appspot.com/o/freeStyle%2FfreeStyle%208.jpg?alt=media&token=26badf82-b15d-4159-802f-5922a37b69db"),
                           fit: BoxFit.cover)),
                   child:
                       Stack(alignment: Alignment.bottomLeft, children: const [
@@ -357,7 +365,8 @@ class _NewState extends State<New> {
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(20),
                       image: const DecorationImage(
-                          image: AssetImage("assets/freeStyle 9.jpg"),
+                          image: NetworkImage(
+                              "https://firebasestorage.googleapis.com/v0/b/three-dimension-fitness.appspot.com/o/freeStyle%2FfreeStyle%209.jpg?alt=media&token=3edfc766-6e74-48f4-8fdd-a549b97b07e2"),
                           fit: BoxFit.cover)),
                   child:
                       Stack(alignment: Alignment.bottomLeft, children: const [
@@ -377,7 +386,8 @@ class _NewState extends State<New> {
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(20),
                       image: const DecorationImage(
-                          image: AssetImage("assets/freeStyle 10.jpg"),
+                          image: NetworkImage(
+                              "https://firebasestorage.googleapis.com/v0/b/three-dimension-fitness.appspot.com/o/freeStyle%2FfreeStyle%2010.jpg?alt=media&token=942ff822-19fa-44cb-baab-ffa1df47ae0b"),
                           fit: BoxFit.cover)),
                   child:
                       Stack(alignment: Alignment.bottomLeft, children: const [
@@ -397,7 +407,8 @@ class _NewState extends State<New> {
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(20),
                       image: const DecorationImage(
-                          image: AssetImage("assets/freeStyle 11.jpg"),
+                          image: NetworkImage(
+                              "https://firebasestorage.googleapis.com/v0/b/three-dimension-fitness.appspot.com/o/freeStyle%2FfreeStyle%2011.jpg?alt=media&token=5cd9752f-a902-4eab-98f0-469ba36df0cb"),
                           fit: BoxFit.cover)),
                   child:
                       Stack(alignment: Alignment.bottomLeft, children: const [
@@ -417,7 +428,8 @@ class _NewState extends State<New> {
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
                     image: const DecorationImage(
-                        image: AssetImage("assets/freeStyle 12.png"),
+                        image: NetworkImage(
+                            "https://firebasestorage.googleapis.com/v0/b/three-dimension-fitness.appspot.com/o/freeStyle%2FfreeStyle%2012.png?alt=media&token=b23eab84-f703-4a9d-baf7-b40e627a8305"),
                         fit: BoxFit.cover),
                   ),
                   child:

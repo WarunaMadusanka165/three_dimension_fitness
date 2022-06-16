@@ -160,7 +160,8 @@ class _WorkoutState extends State<Workout> {
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(25),
                           image: const DecorationImage(
-                              image: AssetImage("assets/2(1).jpg"),
+                              image: NetworkImage(
+                                  "https://firebasestorage.googleapis.com/v0/b/three-dimension-fitness.appspot.com/o/workOut%2F2(1).jpg?alt=media&token=3a963e5f-6038-4090-9cb3-d9b2794fd301"),
                               fit: BoxFit.cover)),
                       child: Stack(
                         alignment: Alignment.bottomCenter,
@@ -276,7 +277,8 @@ class _WorkoutState extends State<Workout> {
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(25),
                           image: const DecorationImage(
-                              image: AssetImage("assets/2(2).jpg"),
+                              image: NetworkImage(
+                                  "https://firebasestorage.googleapis.com/v0/b/three-dimension-fitness.appspot.com/o/workOut%2F2(2).jpg?alt=media&token=1173db1d-3f15-4996-8b90-8ccfd6eac683"),
                               fit: BoxFit.cover)),
                       child: Stack(
                         alignment: Alignment.bottomCenter,
@@ -390,7 +392,8 @@ class _WorkoutState extends State<Workout> {
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(25),
                           image: const DecorationImage(
-                              image: AssetImage("assets/2(3).jpg"),
+                              image: NetworkImage(
+                                  "https://firebasestorage.googleapis.com/v0/b/three-dimension-fitness.appspot.com/o/workOut%2F2(3).jpg?alt=media&token=cdc2db50-2b4b-4ec6-ae88-287a7e0ad3a3"),
                               fit: BoxFit.cover)),
                       child: Stack(
                         alignment: Alignment.bottomCenter,
@@ -504,7 +507,8 @@ class _WorkoutState extends State<Workout> {
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(25),
                           image: const DecorationImage(
-                              image: AssetImage("assets/2(4).jpg"),
+                              image: NetworkImage(
+                                  "https://firebasestorage.googleapis.com/v0/b/three-dimension-fitness.appspot.com/o/workOut%2F2(4).jpg?alt=media&token=848de078-e8ee-47c7-97d4-afc533d737d1"),
                               fit: BoxFit.cover)),
                       child: Stack(
                         alignment: Alignment.bottomCenter,
@@ -618,7 +622,8 @@ class _WorkoutState extends State<Workout> {
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(25),
                           image: const DecorationImage(
-                              image: AssetImage("assets/2(5).jpg"),
+                              image: NetworkImage(
+                                  "https://firebasestorage.googleapis.com/v0/b/three-dimension-fitness.appspot.com/o/workOut%2F2(5).jpg?alt=media&token=fbf45061-2dc2-4a00-a5d6-a3169c08fa5d"),
                               fit: BoxFit.cover)),
                       child: Stack(
                         alignment: Alignment.bottomCenter,
@@ -789,7 +794,8 @@ class _WorkoutState extends State<Workout> {
                         decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(25),
                             image: const DecorationImage(
-                                image: AssetImage("assets/2(6).jpg"),
+                                image: NetworkImage(
+                                    "https://firebasestorage.googleapis.com/v0/b/three-dimension-fitness.appspot.com/o/workOut%2F2(6).jpg?alt=media&token=ce8bedb8-1c7a-4593-b86d-32a7276f9236"),
                                 fit: BoxFit.cover)),
                         child: Stack(
                           alignment: Alignment.bottomCenter,
@@ -910,7 +916,8 @@ class _WorkoutState extends State<Workout> {
                         decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(25),
                             image: const DecorationImage(
-                                image: AssetImage("assets/2(7).jpg"),
+                                image: NetworkImage(
+                                    "https://firebasestorage.googleapis.com/v0/b/three-dimension-fitness.appspot.com/o/workOut%2F2(7).jpg?alt=media&token=2e9b2508-7aa3-4fd8-adc0-2605c6a401dc"),
                                 fit: BoxFit.cover)),
                         child: Stack(
                           alignment: Alignment.bottomCenter,
@@ -1031,7 +1038,8 @@ class _WorkoutState extends State<Workout> {
                         decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(25),
                             image: const DecorationImage(
-                                image: AssetImage("assets/2(8).jpg"),
+                                image: NetworkImage(
+                                    "https://firebasestorage.googleapis.com/v0/b/three-dimension-fitness.appspot.com/o/workOut%2F2(8).jpg?alt=media&token=850ed20e-90b9-419c-b4fd-c4b307c9d0f1"),
                                 fit: BoxFit.cover)),
                         child: Stack(
                           alignment: Alignment.bottomCenter,
@@ -1152,7 +1160,8 @@ class _WorkoutState extends State<Workout> {
                         decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(25),
                             image: const DecorationImage(
-                                image: AssetImage("assets/2(9).jpg"),
+                                image: NetworkImage(
+                                    "https://firebasestorage.googleapis.com/v0/b/three-dimension-fitness.appspot.com/o/workOut%2F2(9).jpg?alt=media&token=a7dda2e2-fa7c-43bf-a2fe-d013dc803337"),
                                 fit: BoxFit.cover)),
                         child: Stack(
                           alignment: Alignment.bottomCenter,
@@ -1273,7 +1282,8 @@ class _WorkoutState extends State<Workout> {
                         decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(25),
                             image: const DecorationImage(
-                                image: AssetImage("assets/2(10).jpg"),
+                                image: NetworkImage(
+                                    "https://firebasestorage.googleapis.com/v0/b/three-dimension-fitness.appspot.com/o/workOut%2F2(10).jpg?alt=media&token=a0cedc73-2e5a-450c-bd2a-8c8fb649a344"),
                                 fit: BoxFit.cover)),
                         child: Stack(
                           alignment: Alignment.bottomCenter,

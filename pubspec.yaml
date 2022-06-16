@@ -45,15 +45,24 @@ dependencies:
   flutter_launcher_icons: "^0.8.0"
   provider: ^4.3.2+3
   animated_toggle_switch: ^0.5.2
+  cloud_firestore: ^3.1.17
+  firebase_auth: ^3.3.19
+  email_validator: ^2.0.1
+  firebase_core: ^1.17.1
+  firebase_storage: ^10.2.17
+  google_sign_in: ^5.3.3
+  font_awesome_flutter: ^10.1.0
   
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
 flutter_icons:
-  android: "launcher_icon"
+  android: true
   ios: true
-  image_path: "assets/icon/icon.png"      
+  image_path: "assets/logo.png"
+  adaptive_icon_background: "#ffffff" 
+  adaptive_icon_foreground: "assets/logo_foreground.png"     
     
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is

@@ -40,190 +40,194 @@ class _GoalState extends State<Goal> {
         children: [
           Padding(
             padding: const EdgeInsets.only(top: 30.0, left: 10, right: 10),
-            child: Container(
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(15),
-                color: const Color.fromRGBO(20, 20, 20, 1),
-              ),
-              child: Padding(
-                padding: const EdgeInsets.only(top: 8.0, bottom: 8),
-                child: Row(
-                  children: [
-                    const Padding(
-                        padding: EdgeInsets.only(left: 15.0),
-                        child: Icon(
-                          Icons.settings,
-                          color: Color.fromRGBO(255, 104, 26, 1),
-                        )),
-                    const Padding(
-                      padding: EdgeInsets.only(left: 15.0),
-                      child: Text(
-                        'Lose Fat',
-                        style: TextStyle(
-                            fontSize: 15,
-                            color: Color.fromRGBO(164, 164, 164, 1)),
-                      ),
-                    ),
-                    const Spacer(),
-                    Padding(
-                      padding: const EdgeInsets.only(right: 15.0),
-                      child: IconButton(
-                          onPressed: () => {
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                      builder: (context) => (LoseFat())),
-                                )
-                              },
-                          icon: const Icon(
-                            Icons.arrow_forward_ios_rounded,
-                            size: 15,
-                            color: Color.fromRGBO(255, 255, 255, 1),
-                          )),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.only(top: 5.0, left: 10, right: 10),
-            child: Container(
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(15),
-                color: const Color.fromRGBO(20, 20, 20, 1),
-              ),
-              child: Padding(
-                padding: const EdgeInsets.only(top: 8.0, bottom: 8),
-                child: Row(
-                  children: [
-                    const Padding(
-                        padding: EdgeInsets.only(left: 15.0),
-                        child: Icon(
-                          Icons.health_and_safety_sharp,
-                          color: Color.fromRGBO(255, 104, 26, 1),
-                        )),
-                    const Padding(
-                      padding: EdgeInsets.only(left: 15.0),
-                      child: Text(
-                        'Improve Cardio',
-                        style: TextStyle(
-                            fontSize: 15,
-                            color: Color.fromRGBO(164, 164, 164, 1)),
-                      ),
-                    ),
-                    const Spacer(),
-                    Padding(
-                      padding: const EdgeInsets.only(right: 15.0),
-                      child: IconButton(
-                          onPressed: () => {
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                      builder: (context) => (ImproveCardio())),
-                                )
-                              },
-                          icon: const Icon(
-                            Icons.arrow_forward_ios_rounded,
-                            size: 15,
-                            color: Color.fromRGBO(255, 255, 255, 1),
-                          )),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.only(top: 5.0, left: 10, right: 10),
-            child: Container(
-              decoration: BoxDecoration(
+            child: GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => (LoseFat())),
+                );
+              },
+              child: Container(
+                height: 70,
+                decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(15),
-                  color: const Color.fromRGBO(20, 20, 20, 1)),
-              child: Padding(
-                padding: const EdgeInsets.only(top: 8.0, bottom: 8),
-                child: Row(
-                  children: [
-                    const Padding(
-                        padding: EdgeInsets.only(left: 15.0),
-                        child: Icon(
-                          Icons.access_alarm,
-                          color: Color.fromRGBO(255, 104, 26, 1),
-                        )),
-                    const Padding(
-                      padding: EdgeInsets.only(left: 15.0),
-                      child: Text(
-                        'Body Shape',
-                        style: TextStyle(
-                            fontSize: 15,
-                            color: Color.fromRGBO(164, 164, 164, 1)),
-                      ),
-                    ),
-                    const Spacer(),
-                    Padding(
-                      padding: const EdgeInsets.only(right: 15.0),
-                      child: IconButton(
-                          onPressed: () => {
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                      builder: (context) => (BodyShape())),
-                                )
-                              },
-                          icon: const Icon(
-                            Icons.arrow_forward_ios_rounded,
-                            size: 15,
-                            color: Color.fromRGBO(255, 255, 255, 1),
+                  color: const Color.fromRGBO(20, 20, 20, 1),
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.only(top: 8.0, bottom: 8),
+                  child: Row(
+                    children: [
+                      const Padding(
+                          padding: EdgeInsets.only(left: 15.0),
+                          child: Icon(
+                            Icons.settings,
+                            color: Color.fromRGBO(255, 104, 26, 1),
                           )),
-                    ),
-                  ],
+                      const Padding(
+                        padding: EdgeInsets.only(left: 15.0),
+                        child: Text(
+                          'Lose Fat',
+                          style: TextStyle(
+                              fontSize: 15,
+                              color: Color.fromRGBO(164, 164, 164, 1)),
+                        ),
+                      ),
+                      const Spacer(),
+                      Padding(
+                        padding: const EdgeInsets.only(right: 15.0),
+                        child: Icon(
+                          Icons.arrow_forward_ios_rounded,
+                          size: 15,
+                          color: Color.fromRGBO(255, 255, 255, 1),
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
               ),
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.only(top: 5.0, left: 10, right: 10),
-            child: Container(
-              decoration: BoxDecoration(
+          GestureDetector(
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => (ImproveCardio())),
+              );
+            },
+            child: Padding(
+              padding: const EdgeInsets.only(top: 5.0, left: 10, right: 10),
+              child: Container(
+                height: 70,
+                decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(15),
-                  color: const Color.fromRGBO(20, 20, 20, 1)),
-              child: Padding(
-                padding: const EdgeInsets.only(top: 8.0, bottom: 8),
-                child: Row(
-                  children: [
-                    const Padding(
-                        padding: EdgeInsets.only(left: 15.0),
-                        child: Icon(
-                          Icons.account_tree_sharp,
-                          color: Color.fromRGBO(255, 104, 26, 1),
-                        )),
-                    const Padding(
-                      padding: EdgeInsets.only(left: 15.0),
-                      child: Text(
-                        'Become Flexible',
-                        style: TextStyle(
-                            fontSize: 15,
-                            color: Color.fromRGBO(164, 164, 164, 1)),
-                      ),
-                    ),
-                    const Spacer(),
-                    Padding(
-                      padding: const EdgeInsets.only(right: 15.0),
-                      child: IconButton(
-                          onPressed: () => {
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                      builder: (context) => (BecomeFlexible())),
-                                )
-                              },
-                          icon: const Icon(
-                            Icons.arrow_forward_ios_rounded,
-                            size: 15,
-                            color: Color.fromRGBO(255, 255, 255, 1),
+                  color: const Color.fromRGBO(20, 20, 20, 1),
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.only(top: 8.0, bottom: 8),
+                  child: Row(
+                    children: [
+                      const Padding(
+                          padding: EdgeInsets.only(left: 15.0),
+                          child: Icon(
+                            Icons.health_and_safety_sharp,
+                            color: Color.fromRGBO(255, 104, 26, 1),
                           )),
-                    ),
-                  ],
+                      const Padding(
+                        padding: EdgeInsets.only(left: 15.0),
+                        child: Text(
+                          'Improve Cardio',
+                          style: TextStyle(
+                              fontSize: 15,
+                              color: Color.fromRGBO(164, 164, 164, 1)),
+                        ),
+                      ),
+                      const Spacer(),
+                      Padding(
+                        padding: const EdgeInsets.only(right: 15.0),
+                        child: Icon(
+                          Icons.arrow_forward_ios_rounded,
+                          size: 15,
+                          color: Color.fromRGBO(255, 255, 255, 1),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+          ),
+          GestureDetector(
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => (BodyShape())),
+              );
+            },
+            child: Padding(
+              padding: const EdgeInsets.only(top: 5.0, left: 10, right: 10),
+              child: Container(
+                height: 70,
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(15),
+                    color: const Color.fromRGBO(20, 20, 20, 1)),
+                child: Padding(
+                  padding: const EdgeInsets.only(top: 8.0, bottom: 8),
+                  child: Row(
+                    children: [
+                      const Padding(
+                          padding: EdgeInsets.only(left: 15.0),
+                          child: Icon(
+                            Icons.access_alarm,
+                            color: Color.fromRGBO(255, 104, 26, 1),
+                          )),
+                      const Padding(
+                        padding: EdgeInsets.only(left: 15.0),
+                        child: Text(
+                          'Body Shape',
+                          style: TextStyle(
+                              fontSize: 15,
+                              color: Color.fromRGBO(164, 164, 164, 1)),
+                        ),
+                      ),
+                      const Spacer(),
+                      Padding(
+                        padding: const EdgeInsets.only(right: 15.0),
+                        child: Icon(
+                          Icons.arrow_forward_ios_rounded,
+                          size: 15,
+                          color: Color.fromRGBO(255, 255, 255, 1),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+          ),
+          GestureDetector(
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => (BecomeFlexible())),
+              );
+            },
+            child: Padding(
+              padding: const EdgeInsets.only(top: 5.0, left: 10, right: 10),
+              child: Container(
+                height: 70,
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(15),
+                    color: const Color.fromRGBO(20, 20, 20, 1)),
+                child: Padding(
+                  padding: const EdgeInsets.only(top: 8.0, bottom: 8),
+                  child: Row(
+                    children: [
+                      const Padding(
+                          padding: EdgeInsets.only(left: 15.0),
+                          child: Icon(
+                            Icons.account_tree_sharp,
+                            color: Color.fromRGBO(255, 104, 26, 1),
+                          )),
+                      const Padding(
+                        padding: EdgeInsets.only(left: 15.0),
+                        child: Text(
+                          'Become Flexible',
+                          style: TextStyle(
+                              fontSize: 15,
+                              color: Color.fromRGBO(164, 164, 164, 1)),
+                        ),
+                      ),
+                      const Spacer(),
+                      Padding(
+                        padding: const EdgeInsets.only(right: 15.0),
+                        child: Icon(
+                          Icons.arrow_forward_ios_rounded,
+                          size: 15,
+                          color: Color.fromRGBO(255, 255, 255, 1),
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
               ),
             ),

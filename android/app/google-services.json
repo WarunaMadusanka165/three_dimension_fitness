@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "131068061375",
+    "project_id": "three-dimension-fitness",
+    "storage_bucket": "three-dimension-fitness.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:131068061375:android:7a19b2b6c8910bacf7480a",
+        "android_client_info": {
+          "package_name": "com.example.three_dimension_fitness"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "131068061375-17b955qc4oh9fuhkikmnmg0mkpgri2dg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDseNGe05IUGzgjFhl8IbAaJzQNadMjEv4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "131068061375-17b955qc4oh9fuhkikmnmg0mkpgri2dg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

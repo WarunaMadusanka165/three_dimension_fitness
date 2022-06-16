@@ -370,8 +370,8 @@ class _LoseFat2State extends State<LoseFat2> {
               children: [
                 Container(
                   height: 250,
-                  child: Image.asset(
-                    "assets/bodyShape.jpg",
+                  child: Image.network(
+                    "https://firebasestorage.googleapis.com/v0/b/three-dimension-fitness.appspot.com/o/loseFat%2FbodyShape.jpg?alt=media&token=610eb375-0938-4c84-af0a-c2ade65541a8",
                     fit: BoxFit.cover,
                   ),
                 ),
@@ -447,7 +447,8 @@ class _LoseFat2State extends State<LoseFat2> {
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(12),
                         image: const DecorationImage(
-                            image: AssetImage("assets/eggs.jpg"),
+                            image: NetworkImage(
+                                "https://firebasestorage.googleapis.com/v0/b/three-dimension-fitness.appspot.com/o/loseFat%2Feggs.jpg?alt=media&token=845c530f-4dc4-4bd7-aa38-fd64efbc59bc"),
                             fit: BoxFit.cover)),
                     width: width / 2 - 20,
                     height: height * 0.17,
@@ -475,7 +476,8 @@ class _LoseFat2State extends State<LoseFat2> {
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(12),
                         image: const DecorationImage(
-                            image: AssetImage("assets/greenTea.jpg"),
+                            image: NetworkImage(
+                                "https://firebasestorage.googleapis.com/v0/b/three-dimension-fitness.appspot.com/o/loseFat%2FgreenTea.jpg?alt=media&token=66fc27aa-3506-4dcd-a6ba-dbde6456747f"),
                             fit: BoxFit.cover)),
                     width: width / 2 - 20,
                     height: height * 0.17,
@@ -503,7 +505,8 @@ class _LoseFat2State extends State<LoseFat2> {
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(12),
                         image: const DecorationImage(
-                            image: AssetImage("assets/AppleCiderVinegar.jpg"),
+                            image: NetworkImage(
+                                "https://firebasestorage.googleapis.com/v0/b/three-dimension-fitness.appspot.com/o/loseFat%2FAppleCiderVinegar.jpg?alt=media&token=da10e057-e827-4ded-beb3-ed7ba8079562"),
                             fit: BoxFit.cover)),
                     width: width / 2 - 20,
                     height: height * 0.17,

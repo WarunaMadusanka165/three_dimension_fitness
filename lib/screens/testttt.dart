@@ -400,6 +400,7 @@
 import 'dart:math';
 
 import 'package:animated_toggle_switch/animated_toggle_switch.dart';
+import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 
 class MyAppeeeee extends StatelessWidget {
@@ -759,4 +760,17 @@ class _MyHomePageState extends State<MyHomePage> {
       size: local.iconSize.shortestSide,
     );
   }
+}
+
+Future hjsdfjh() async {
+  final ref = FirebaseStorage.instance.ref().child('1.jpg');
+// no need of the file extension, the name will do fine.
+  var url = await ref.getDownloadURL();
+  print(url);
+}
+
+Future listPhotos() async {
+  final ref = FirebaseStorage.instance.ref().child('freeStyle').listAll();
+  var url = await ref.toString();
+  print(url);
 }

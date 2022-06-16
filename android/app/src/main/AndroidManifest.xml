@@ -2,7 +2,7 @@
     package="com.example.three_dimension_fitness">
     <uses-permission android:name="android.permission.INTERNET" />
    <application
-        android:label="three_dimension_fitness"
+        android:label="Three Dimension Fitness"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

@@ -176,7 +176,6 @@
 import 'package:flutter/material.dart';
 import 'package:three_dimension_fitness/screens/loseFatScreen2.dart';
 
-
 class LoseFat extends StatefulWidget {
   const LoseFat({Key? key}) : super(key: key);
 
@@ -197,8 +196,8 @@ class _LoseFatState extends State<LoseFat> {
               children: [
                 Container(
                   height: 250,
-                  child: Image.asset(
-                    "assets/bodyShape.jpg",
+                  child: Image.network(
+                    "https://firebasestorage.googleapis.com/v0/b/three-dimension-fitness.appspot.com/o/loseFat%2FbodyShape.jpg?alt=media&token=610eb375-0938-4c84-af0a-c2ade65541a8",
                     fit: BoxFit.cover,
                   ),
                 ),
@@ -274,7 +273,8 @@ class _LoseFatState extends State<LoseFat> {
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(12),
                         image: const DecorationImage(
-                            image: AssetImage("assets/fattyFish.jpg"),
+                            image: NetworkImage(
+                                "https://firebasestorage.googleapis.com/v0/b/three-dimension-fitness.appspot.com/o/loseFat%2FfattyFish.jpg?alt=media&token=ff1ccfc4-d7f6-4f31-815e-2d40a7d94333"),
                             fit: BoxFit.cover)),
                     width: width / 2 - 20,
                     height: height * 0.17,
@@ -302,7 +302,8 @@ class _LoseFatState extends State<LoseFat> {
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(12),
                         image: const DecorationImage(
-                            image: AssetImage("assets/mctOil.jpg"),
+                            image: NetworkImage(
+                                "https://firebasestorage.googleapis.com/v0/b/three-dimension-fitness.appspot.com/o/loseFat%2FmctOil.jpg?alt=media&token=a83b5b9d-7723-48ba-82b8-d08b0c868e4a"),
                             fit: BoxFit.cover)),
                     width: width / 2 - 20,
                     height: height * 0.17,
@@ -330,7 +331,8 @@ class _LoseFatState extends State<LoseFat> {
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(12),
                         image: const DecorationImage(
-                            image: AssetImage("assets/coffee1.jpg"),
+                            image: NetworkImage(
+                                "https://firebasestorage.googleapis.com/v0/b/three-dimension-fitness.appspot.com/o/loseFat%2Fcoffee1.jpg?alt=media&token=b3d6e06a-f086-4648-8f24-60a4cacc26ce"),
                             fit: BoxFit.cover)),
                     width: width / 2 - 20,
                     height: height * 0.17,

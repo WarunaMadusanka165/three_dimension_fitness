@@ -23,8 +23,8 @@ class _BodyShapeState extends State<BodyShape> {
                 Container(
                   height: 250,
                   width: width,
-                  child: Image.asset(
-                    "assets/loseFat.jpg",
+                  child: Image.network(
+                    "https://firebasestorage.googleapis.com/v0/b/three-dimension-fitness.appspot.com/o/bodyShape%2FloseFat.jpg?alt=media&token=c5c41d6e-f716-4da3-b379-9cb6afdf0950",
                     fit: BoxFit.cover,
                   ),
                 ),
@@ -104,7 +104,8 @@ class _BodyShapeState extends State<BodyShape> {
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(12),
                       image: const DecorationImage(
-                          image: AssetImage("assets/leanBeef.jpeg"),
+                          image: NetworkImage(
+                              "https://firebasestorage.googleapis.com/v0/b/three-dimension-fitness.appspot.com/o/bodyShape%2FleanBeef.jpeg?alt=media&token=ef652d49-b64a-4a4c-b351-de61a9f10513"),
                           fit: BoxFit.cover)),
                 ),
                 SizedBox(
@@ -126,7 +127,8 @@ class _BodyShapeState extends State<BodyShape> {
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(12),
                       image: const DecorationImage(
-                          image: AssetImage("assets/tofu.jpg"),
+                          image: NetworkImage(
+                              "https://firebasestorage.googleapis.com/v0/b/three-dimension-fitness.appspot.com/o/improveCardio%2Ftofu.jpg?alt=media&token=21af3f35-4a83-47cd-9533-9dcce376f512"),
                           fit: BoxFit.cover)),
                 ),
                 SizedBox(
@@ -148,7 +150,8 @@ class _BodyShapeState extends State<BodyShape> {
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(12),
                       image: const DecorationImage(
-                          image: AssetImage("assets/spinach.jpg"),
+                          image: NetworkImage(
+                              "https://firebasestorage.googleapis.com/v0/b/three-dimension-fitness.appspot.com/o/bodyShape%2Fspinach.jpg?alt=media&token=9834002b-f1c4-4325-9f63-baf20813fafd"),
                           fit: BoxFit.cover)),
                 ),
                 SizedBox(
@@ -170,7 +173,8 @@ class _BodyShapeState extends State<BodyShape> {
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(12),
                       image: const DecorationImage(
-                          image: AssetImage("assets/cottageCheese.jpg"),
+                          image: NetworkImage(
+                              "https://firebasestorage.googleapis.com/v0/b/three-dimension-fitness.appspot.com/o/bodyShape%2FcottageCheese.jpg?alt=media&token=61424ecd-b4f3-43d2-86a1-09c2e154b0cb"),
                           fit: BoxFit.cover)),
                 ),
                 SizedBox(

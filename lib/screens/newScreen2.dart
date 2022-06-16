@@ -128,7 +128,8 @@ class _New2State extends State<New2> {
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(20),
                       image: const DecorationImage(
-                          image: AssetImage("assets/new 1.jpg"),
+                          image: NetworkImage(
+                              "https://firebasestorage.googleapis.com/v0/b/three-dimension-fitness.appspot.com/o/homeCards%2Fnew%201.jpg?alt=media&token=ac78ddf3-804c-44fb-84b1-705b13811316"),
                           fit: BoxFit.cover)),
                   child:
                       Stack(alignment: Alignment.bottomLeft, children: const [
@@ -148,7 +149,8 @@ class _New2State extends State<New2> {
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(20),
                       image: const DecorationImage(
-                          image: AssetImage("assets/new 2.jpg"),
+                          image: NetworkImage(
+                              "https://firebasestorage.googleapis.com/v0/b/three-dimension-fitness.appspot.com/o/homeCards%2Fnew%202.jpg?alt=media&token=b0115fb9-f381-4665-ac43-3a056754b9b4"),
                           fit: BoxFit.cover)),
                   child:
                       Stack(alignment: Alignment.bottomLeft, children: const [
@@ -168,7 +170,8 @@ class _New2State extends State<New2> {
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(20),
                       image: const DecorationImage(
-                          image: AssetImage("assets/new 3.jpg"),
+                          image: NetworkImage(
+                              "https://firebasestorage.googleapis.com/v0/b/three-dimension-fitness.appspot.com/o/homeCards%2Fnew%203.jpg?alt=media&token=a956f642-7a3c-4c92-876f-973f155482cb"),
                           fit: BoxFit.cover)),
                   child:
                       Stack(alignment: Alignment.bottomLeft, children: const [
@@ -188,7 +191,8 @@ class _New2State extends State<New2> {
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(20),
                       image: const DecorationImage(
-                          image: AssetImage("assets/new 4.jpeg"),
+                          image: NetworkImage(
+                              "https://firebasestorage.googleapis.com/v0/b/three-dimension-fitness.appspot.com/o/homeCards%2Fnew%204.jpeg?alt=media&token=35eda0e7-bd37-4480-bd56-93040b2f0c9d"),
                           fit: BoxFit.cover)),
                   child:
                       Stack(alignment: Alignment.bottomLeft, children: const [
@@ -208,7 +212,8 @@ class _New2State extends State<New2> {
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(20),
                       image: const DecorationImage(
-                          image: AssetImage("assets/new 5.jpg"),
+                          image: NetworkImage(
+                              "https://firebasestorage.googleapis.com/v0/b/three-dimension-fitness.appspot.com/o/homeCards%2Fnew%205.jpg?alt=media&token=5fd020f8-a2f8-4b22-a1ef-1defe33cbb0b"),
                           fit: BoxFit.cover)),
                   child:
                       Stack(alignment: Alignment.bottomLeft, children: const [
@@ -228,7 +233,8 @@ class _New2State extends State<New2> {
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(20),
                       image: const DecorationImage(
-                          image: AssetImage("assets/new 6.jpg"),
+                          image: NetworkImage(
+                              "https://firebasestorage.googleapis.com/v0/b/three-dimension-fitness.appspot.com/o/homeCards%2Fnew%206.jpg?alt=media&token=150382f1-ec41-4bc4-98cb-9bc370c784be"),
                           fit: BoxFit.cover)),
                   child:
                       Stack(alignment: Alignment.bottomLeft, children: const [
@@ -248,7 +254,8 @@ class _New2State extends State<New2> {
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(20),
                       image: const DecorationImage(
-                          image: AssetImage("assets/new 7.jpg"),
+                          image: NetworkImage(
+                              "https://firebasestorage.googleapis.com/v0/b/three-dimension-fitness.appspot.com/o/homeCards%2Fnew%207.jpg?alt=media&token=b89b7e6d-135c-4d93-a576-d6846d709c45"),
                           fit: BoxFit.cover)),
                   child:
                       Stack(alignment: Alignment.bottomLeft, children: const [
@@ -268,7 +275,8 @@ class _New2State extends State<New2> {
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(20),
                       image: const DecorationImage(
-                          image: AssetImage("assets/new 8.jpg"),
+                          image: NetworkImage(
+                              "https://firebasestorage.googleapis.com/v0/b/three-dimension-fitness.appspot.com/o/homeCards%2Fnew%208.jpg?alt=media&token=cc5612d8-2165-4e81-a1eb-852f1d5b5add"),
                           fit: BoxFit.cover)),
                   child:
                       Stack(alignment: Alignment.bottomLeft, children: const [
@@ -288,7 +296,8 @@ class _New2State extends State<New2> {
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(20),
                       image: const DecorationImage(
-                          image: AssetImage("assets/new 9.jpg"),
+                          image: NetworkImage(
+                              "https://firebasestorage.googleapis.com/v0/b/three-dimension-fitness.appspot.com/o/homeCards%2Fnew%209.jpg?alt=media&token=1239747e-738d-4ad8-bac5-e02562dcc40c"),
                           fit: BoxFit.cover)),
                   child:
                       Stack(alignment: Alignment.bottomLeft, children: const [
@@ -308,7 +317,8 @@ class _New2State extends State<New2> {
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(20),
                       image: const DecorationImage(
-                          image: AssetImage("assets/new 10.jpg"),
+                          image: NetworkImage(
+                              "https://firebasestorage.googleapis.com/v0/b/three-dimension-fitness.appspot.com/o/homeCards%2Fnew%2010.jpg?alt=media&token=d1cd2775-ee6f-4911-b35e-6101ac9026b2"),
                           fit: BoxFit.cover)),
                   child:
                       Stack(alignment: Alignment.bottomLeft, children: const [
@@ -328,7 +338,8 @@ class _New2State extends State<New2> {
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(20),
                       image: const DecorationImage(
-                          image: AssetImage("assets/new 11.jpg"),
+                          image: NetworkImage(
+                              "https://firebasestorage.googleapis.com/v0/b/three-dimension-fitness.appspot.com/o/homeCards%2Fnew%2011.jpg?alt=media&token=2a3ca4a7-f39d-421f-b4c1-0d9c9390a616"),
                           fit: BoxFit.cover)),
                   child:
                       Stack(alignment: Alignment.bottomLeft, children: const [
@@ -348,7 +359,8 @@ class _New2State extends State<New2> {
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
                     image: const DecorationImage(
-                        image: AssetImage("assets/new 12.jpg"),
+                        image: NetworkImage(
+                            "https://firebasestorage.googleapis.com/v0/b/three-dimension-fitness.appspot.com/o/homeCards%2Fnew%2012.jpg?alt=media&token=7434778c-f3cd-4bcc-9c0b-cd0247227c10"),
                         fit: BoxFit.cover),
                   ),
                   child:

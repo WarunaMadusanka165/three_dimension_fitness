@@ -1,5 +1,8 @@
-// ignore_for_file: file_names, use_key_in_widget_constructors, deprecated_member_use, avoid_types_as_parameter_names, unused_field, import_of_legacy_library_into_null_safe
+// ignore_for_file: file_names, use_key_in_widget_constructors, deprecated_member_use, avoid_types_as_parameter_names, unused_field, import_of_legacy_library_into_null_safe, unused_local_variable, unused_element
 
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:provider/provider.dart';
@@ -8,12 +11,15 @@ import 'package:three_dimension_fitness/screens/homeWorkoutScreen.dart';
 import 'package:three_dimension_fitness/screens/newScreen2.dart';
 import 'package:three_dimension_fitness/screens/quickWorkoutScreen.dart';
 import 'package:three_dimension_fitness/screens/stretchScreen.dart';
+import 'package:three_dimension_fitness/screens/theme/changethemebutton.dart';
 import 'package:three_dimension_fitness/screens/toiningScreen.dart';
 import 'package:three_dimension_fitness/screens/workoutScreen.dart';
 import 'package:three_dimension_fitness/screens/premiumScreen.dart';
 import 'package:three_dimension_fitness/screens/profileScreen.dart';
 import 'package:three_dimension_fitness/screens/statusScreen.dart';
 import 'package:three_dimension_fitness/screens/theme/thtmeprovider.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:firebase_storage/firebase_storage.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -21,6 +27,15 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  late Future<ListResult> futureFiles;
+
+  @override
+  void initState() {
+    super.initState();
+
+    futureFiles = FirebaseStorage.instance.ref('/homePage').list();
+  }
+
   int _currentIndex = 0;
 
   List cardList = [const Item1(), const Item2(), const Item3(), const Item4()];
@@ -116,6 +131,26 @@ class _HomePageState extends State<HomePage> {
         ),
         body: ListView(children: [
           // ChangeThemeButtonWidget(),
+          // FutureBuilder<ListResult>(
+          //     future: futureFiles,
+          //     builder: (context, snapshot) {
+          //       if (snapshot.hasData) {
+          //         final files = snapshot.data!.items;
+          //         return ListView.builder(
+          //           itemCount: files.length,
+          //           itemBuilder: (context, index) {
+          //             final file = files[index];
+          //             return ListTile(
+          //               title: Text(file.name),
+          //             );
+          //           },
+          //         );
+          //       } else if (snapshot.hasError) {
+          //         return Center(child: Text("Error"));
+          //       } else {
+          //         return Center(child: CircularProgressIndicator());
+          //       }
+          //     }),
           Column(
             children: <Widget>[
               Row(
@@ -578,7 +613,9 @@ class Item1 extends StatelessWidget {
             borderRadius: BorderRadius.circular(25),
             color: Colors.white,
             image: const DecorationImage(
-                image: AssetImage("assets/1.jpg"), fit: BoxFit.cover)),
+                image: NetworkImage(
+                    "https://firebasestorage.googleapis.com/v0/b/three-dimension-fitness.appspot.com/o/homePage%2F1.jpg?alt=media&token=7c0e8242-98ab-4939-8571-8280a9659ac3"),
+                fit: BoxFit.cover)),
         child: Stack(
           alignment: Alignment.bottomCenter,
           children: [
@@ -676,7 +713,9 @@ class Item2 extends StatelessWidget {
         decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(25),
             image: const DecorationImage(
-                image: AssetImage("assets/2.jpg"), fit: BoxFit.cover)),
+                image: NetworkImage(
+                    "https://firebasestorage.googleapis.com/v0/b/three-dimension-fitness.appspot.com/o/homePage%2F2.jpg?alt=media&token=9110d25b-0416-48a9-8bde-0263ce24d80a"),
+                fit: BoxFit.cover)),
         child: Stack(
           alignment: Alignment.bottomCenter,
           children: [
@@ -769,7 +808,9 @@ class Item3 extends StatelessWidget {
         decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(25),
             image: const DecorationImage(
-                image: AssetImage("assets/3.jpg"), fit: BoxFit.cover)),
+                image: NetworkImage(
+                    "https://firebasestorage.googleapis.com/v0/b/three-dimension-fitness.appspot.com/o/homePage%2F3.jpg?alt=media&token=314803b9-f78c-4993-9359-5960f0992ab9"),
+                fit: BoxFit.cover)),
         child: Stack(
           alignment: Alignment.bottomCenter,
           children: [
@@ -862,7 +903,9 @@ class Item4 extends StatelessWidget {
         decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(25),
             image: const DecorationImage(
-                image: AssetImage("assets/4.jpg"), fit: BoxFit.cover)),
+                image: NetworkImage(
+                    "https://firebasestorage.googleapis.com/v0/b/three-dimension-fitness.appspot.com/o/homePage%2F4.jpg?alt=media&token=a729edaa-d15e-4ace-b22e-aa20ea53599b"),
+                fit: BoxFit.cover)),
         child: Stack(
           alignment: Alignment.bottomCenter,
           children: [
@@ -973,4 +1016,64 @@ class _HomeState extends State<Home> {
           );
         },
       );
+}
+
+// class HomePage extends StatefulWidget {
+//   const HomePage({Key? key}) : super(key: key);
+
+//   @override
+//   State<HomePage> createState() => _HomePageState();
+// }
+
+// class _HomePageState extends State<HomePage> {
+//   @override
+//   Widget build(BuildContext context) {
+//     final double width = MediaQuery.of(context).size.width;
+//     final double height = MediaQuery.of(context).size.height;
+//     return Scaffold(
+//         appBar: AppBar(
+//           title: Text('data'),
+//         ),
+//         body: ListView(
+//           children: [_productBuilder(context)],
+//         ));
+//   }
+// }
+
+Widget _productBuilder(BuildContext context) {
+  return FutureBuilder(
+      future: _getImage(context, "1.jpg"),
+      builder: (context, snapshot) {
+        if (snapshot.connectionState == ConnectionState.done) {
+          if (snapshot.hasData) {
+            return Container();
+          }
+
+          //  return snapshot.data.toString();
+        }
+        if (snapshot.connectionState == ConnectionState.waiting) {
+          return Container(
+              //  child: snapshot.data;
+              );
+        }
+        return Container();
+      });
+}
+
+class FireStorageService extends ChangeNotifier {
+  FireStorageService();
+  static Future<dynamic> loadImage(BuildContext context, String Image) async {
+    await FirebaseStorage.instance.ref().child(Image).getDownloadURL();
+  }
+}
+
+Future<Widget> _getImage(BuildContext context, String imageName) async {
+  late Image image;
+  await FireStorageService.loadImage(context, imageName).then((value) {
+    image = Image.network(
+      value.toString(),
+      fit: BoxFit.scaleDown,
+    );
+  });
+  return image;
 }
