@@ -581,7 +581,9 @@ class _Workout1State extends State<Workout1> {
                           Container(
                             decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(20),
-                                color: const Color.fromRGBO(89, 89, 89, 1)),
+                                image: const DecorationImage(
+                                    image: AssetImage("assets/gif1.gif"),
+                                    fit: BoxFit.cover)),
                             height: height * 0.1,
                             width: width * 0.2,
                           ),
@@ -614,7 +616,9 @@ class _Workout1State extends State<Workout1> {
                           Container(
                             decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(20),
-                                color: const Color.fromRGBO(89, 89, 89, 1)),
+                                image: const DecorationImage(
+                                    image: AssetImage("assets/gif2.gif"),
+                                    fit: BoxFit.cover)),
                             height: height * 0.1,
                             width: width * 0.2,
                           ),
@@ -699,7 +703,9 @@ class _Workout1State extends State<Workout1> {
                           Container(
                             decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(20),
-                                color: const Color.fromRGBO(89, 89, 89, 1)),
+                                image: const DecorationImage(
+                                    image: AssetImage("assets/image.jpeg"),
+                                    fit: BoxFit.cover)),
                             height: height * 0.1,
                             width: width * 0.2,
                           ),

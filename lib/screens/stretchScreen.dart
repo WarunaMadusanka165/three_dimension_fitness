@@ -1,6 +1,7 @@
 // ignore_for_file: file_names, unused_local_variable, deprecated_member_use
 
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Stretch extends StatefulWidget {
   const Stretch({Key? key}) : super(key: key);
@@ -123,258 +124,332 @@ class _StretchState extends State<Stretch> {
               mainAxisSpacing: 10,
               crossAxisCount: 2,
               children: <Widget>[
-                Container(
-                  padding: const EdgeInsets.all(8),
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(20),
-                      image: const DecorationImage(
-                          image: NetworkImage(
-                              "https://firebasestorage.googleapis.com/v0/b/three-dimension-fitness.appspot.com/o/homeCards%2Fnew%201.jpg?alt=media&token=ac78ddf3-804c-44fb-84b1-705b13811316"),
-                          fit: BoxFit.cover)),
-                  child:
-                      Stack(alignment: Alignment.bottomLeft, children: const [
-                    Padding(
-                      padding: EdgeInsets.all(8.0),
-                      child: Text(
-                        "Stretch",
-                        style: TextStyle(
-                            color: Color.fromRGBO(223, 223, 223, 1),
-                            fontSize: 20),
+                GestureDetector(
+                  onTap: () async {
+                    String url =
+                        'https://www.youtube.com/watch?v=JOjToKrGJZw&amp;ab_channel=%D9%85%D9%87%D9%88%D9%88%D8%B3%D8%B9%D8%B6%D9%84%D8%A7%D8%AA%2F%D9%83%D9%85%D8%A7%D9%84%D8%A7%D9%84%D8%A3%D8%AC%D8%B3%D8%A7%D9%85';
+                    await launch(url);
+                  },
+                  child: Container(
+                    padding: const EdgeInsets.all(8),
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20),
+                        image: const DecorationImage(
+                            image: NetworkImage(
+                                "https://firebasestorage.googleapis.com/v0/b/three-dimension-fitness.appspot.com/o/homeCards%2Fnew%201.jpg?alt=media&token=ac78ddf3-804c-44fb-84b1-705b13811316"),
+                            fit: BoxFit.cover)),
+                    child:
+                        Stack(alignment: Alignment.bottomLeft, children: const [
+                      Padding(
+                        padding: EdgeInsets.all(8.0),
+                        child: Text(
+                          "Stretch",
+                          style: TextStyle(
+                              color: Color.fromRGBO(223, 223, 223, 1),
+                              fontSize: 20),
+                        ),
                       ),
-                    ),
-                  ]),
-                ),
-                Container(
-                  padding: const EdgeInsets.all(8),
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(20),
-                      image: const DecorationImage(
-                          image: NetworkImage(
-                              "https://firebasestorage.googleapis.com/v0/b/three-dimension-fitness.appspot.com/o/homeCards%2Fnew%2011.jpg?alt=media&token=2a3ca4a7-f39d-421f-b4c1-0d9c9390a616"),
-                          fit: BoxFit.cover)),
-                  child:
-                      Stack(alignment: Alignment.bottomLeft, children: const [
-                    Padding(
-                      padding: EdgeInsets.all(8.0),
-                      child: Text(
-                        "Stretch",
-                        style: TextStyle(
-                            color: Color.fromRGBO(223, 223, 223, 1),
-                            fontSize: 20),
-                      ),
-                    ),
-                  ]),
-                ),
-                Container(
-                  padding: const EdgeInsets.all(8),
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(20),
-                      image: const DecorationImage(
-                          image: NetworkImage(
-                              "https://firebasestorage.googleapis.com/v0/b/three-dimension-fitness.appspot.com/o/homeCards%2Fnew%204.jpeg?alt=media&token=35eda0e7-bd37-4480-bd56-93040b2f0c9d"),
-                          fit: BoxFit.cover)),
-                  child:
-                      Stack(alignment: Alignment.bottomLeft, children: const [
-                    Padding(
-                      padding: EdgeInsets.all(8.0),
-                      child: Text(
-                        "Stretch",
-                        style: TextStyle(
-                            color: Color.fromRGBO(223, 223, 223, 1),
-                            fontSize: 20),
-                      ),
-                    ),
-                  ]),
-                ),
-                Container(
-                  padding: const EdgeInsets.all(8),
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(20),
-                      image: const DecorationImage(
-                          image: NetworkImage(
-                              "https://firebasestorage.googleapis.com/v0/b/three-dimension-fitness.appspot.com/o/homeCards%2Fnew%2022.jpg?alt=media&token=f71e78be-0252-492e-a4dd-1ecf81735db6"),
-                          fit: BoxFit.cover)),
-                  child:
-                      Stack(alignment: Alignment.bottomLeft, children: const [
-                    Padding(
-                      padding: EdgeInsets.all(8.0),
-                      child: Text(
-                        "Stretch",
-                        style: TextStyle(
-                            color: Color.fromRGBO(223, 223, 223, 1),
-                            fontSize: 20),
-                      ),
-                    ),
-                  ]),
-                ),
-                Container(
-                  padding: const EdgeInsets.all(8),
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(20),
-                      image: const DecorationImage(
-                          image: NetworkImage(
-                              "https://firebasestorage.googleapis.com/v0/b/three-dimension-fitness.appspot.com/o/homeCards%2Fnew%2027.jpg?alt=media&token=9b6d9227-2a0b-4f85-9347-8057c2843009"),
-                          fit: BoxFit.cover)),
-                  child:
-                      Stack(alignment: Alignment.bottomLeft, children: const [
-                    Padding(
-                      padding: EdgeInsets.all(8.0),
-                      child: Text(
-                        "Stretch",
-                        style: TextStyle(
-                            color: Color.fromRGBO(223, 223, 223, 1),
-                            fontSize: 20),
-                      ),
-                    ),
-                  ]),
-                ),
-                Container(
-                  padding: const EdgeInsets.all(8),
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(20),
-                      image: const DecorationImage(
-                          image: NetworkImage(
-                              "https://firebasestorage.googleapis.com/v0/b/three-dimension-fitness.appspot.com/o/homeCards%2Fnew%2026.jpg?alt=media&token=9ecfea17-2e94-47ae-aacd-c33361f75a9f"),
-                          fit: BoxFit.cover)),
-                  child:
-                      Stack(alignment: Alignment.bottomLeft, children: const [
-                    Padding(
-                      padding: EdgeInsets.all(8.0),
-                      child: Text(
-                        "Stretch",
-                        style: TextStyle(
-                            color: Color.fromRGBO(223, 223, 223, 1),
-                            fontSize: 20),
-                      ),
-                    ),
-                  ]),
-                ),
-                Container(
-                  padding: const EdgeInsets.all(8),
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(20),
-                      image: const DecorationImage(
-                          image: NetworkImage(
-                              "https://firebasestorage.googleapis.com/v0/b/three-dimension-fitness.appspot.com/o/homeCards%2Fnew%2013.jpg?alt=media&token=61fc3d67-e35f-4ea7-bccc-ab9fc0244bae"),
-                          fit: BoxFit.cover)),
-                  child:
-                      Stack(alignment: Alignment.bottomLeft, children: const [
-                    Padding(
-                      padding: EdgeInsets.all(8.0),
-                      child: Text(
-                        "Stretch",
-                        style: TextStyle(
-                            color: Color.fromRGBO(223, 223, 223, 1),
-                            fontSize: 20),
-                      ),
-                    ),
-                  ]),
-                ),
-                Container(
-                  padding: const EdgeInsets.all(8),
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(20),
-                      image: const DecorationImage(
-                          image: NetworkImage(
-                              "https://firebasestorage.googleapis.com/v0/b/three-dimension-fitness.appspot.com/o/homeCards%2Fnew%2015.jpg?alt=media&token=637be3a8-78aa-4e05-8ba0-7add01ae7927"),
-                          fit: BoxFit.cover)),
-                  child:
-                      Stack(alignment: Alignment.bottomLeft, children: const [
-                    Padding(
-                      padding: EdgeInsets.all(8.0),
-                      child: Text(
-                        "Stretch",
-                        style: TextStyle(
-                            color: Color.fromRGBO(223, 223, 223, 1),
-                            fontSize: 20),
-                      ),
-                    ),
-                  ]),
-                ),
-                Container(
-                  padding: const EdgeInsets.all(8),
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(20),
-                      image: const DecorationImage(
-                          image: NetworkImage(
-                              "https://firebasestorage.googleapis.com/v0/b/three-dimension-fitness.appspot.com/o/homeCards%2Fnew%2019.jpg?alt=media&token=afb64ec1-35a3-4150-a339-fbf571b04b6e"),
-                          fit: BoxFit.cover)),
-                  child:
-                      Stack(alignment: Alignment.bottomLeft, children: const [
-                    Padding(
-                      padding: EdgeInsets.all(8.0),
-                      child: Text(
-                        "Stretch",
-                        style: TextStyle(
-                            color: Color.fromRGBO(223, 223, 223, 1),
-                            fontSize: 20),
-                      ),
-                    ),
-                  ]),
-                ),
-                Container(
-                  padding: const EdgeInsets.all(8),
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(20),
-                      image: const DecorationImage(
-                          image: NetworkImage(
-                              "https://firebasestorage.googleapis.com/v0/b/three-dimension-fitness.appspot.com/o/homeCards%2Fnew%207.jpg?alt=media&token=b89b7e6d-135c-4d93-a576-d6846d709c45"),
-                          fit: BoxFit.cover)),
-                  child:
-                      Stack(alignment: Alignment.bottomLeft, children: const [
-                    Padding(
-                      padding: EdgeInsets.all(8.0),
-                      child: Text(
-                        "Stretch",
-                        style: TextStyle(
-                            color: Color.fromRGBO(223, 223, 223, 1),
-                            fontSize: 20),
-                      ),
-                    ),
-                  ]),
-                ),
-                Container(
-                  padding: const EdgeInsets.all(8),
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(20),
-                      image: const DecorationImage(
-                          image: NetworkImage(
-                              "https://firebasestorage.googleapis.com/v0/b/three-dimension-fitness.appspot.com/o/homeCards%2Fnew%2021.jpg?alt=media&token=af12434f-8c52-419a-b4b9-5a3c8ff25217"),
-                          fit: BoxFit.cover)),
-                  child:
-                      Stack(alignment: Alignment.bottomLeft, children: const [
-                    Padding(
-                      padding: EdgeInsets.all(8.0),
-                      child: Text(
-                        "Stretch",
-                        style: TextStyle(
-                            color: Color.fromRGBO(223, 223, 223, 1),
-                            fontSize: 20),
-                      ),
-                    ),
-                  ]),
-                ),
-                Container(
-                  padding: const EdgeInsets.all(8),
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(20),
-                    image: const DecorationImage(
-                        image: NetworkImage(
-                            "https://firebasestorage.googleapis.com/v0/b/three-dimension-fitness.appspot.com/o/homeCards%2Fnew%205.jpg?alt=media&token=5fd020f8-a2f8-4b22-a1ef-1defe33cbb0b"),
-                        fit: BoxFit.cover),
+                    ]),
                   ),
-                  child:
-                      Stack(alignment: Alignment.bottomLeft, children: const [
-                    Padding(
-                      padding: EdgeInsets.all(8.0),
-                      child: Text(
-                        "Stretch",
-                        style: TextStyle(
-                            color: Color.fromRGBO(223, 223, 223, 1),
-                            fontSize: 20),
+                ),
+                GestureDetector(
+                  onTap: () async {
+                    String url = 'https://www.youtube.com/watch?v=mifkJdYqsZY';
+                    await launch(url);
+                  },
+                  child: Container(
+                    padding: const EdgeInsets.all(8),
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20),
+                        image: const DecorationImage(
+                            image: NetworkImage(
+                                "https://firebasestorage.googleapis.com/v0/b/three-dimension-fitness.appspot.com/o/homeCards%2Fnew%2011.jpg?alt=media&token=2a3ca4a7-f39d-421f-b4c1-0d9c9390a616"),
+                            fit: BoxFit.cover)),
+                    child:
+                        Stack(alignment: Alignment.bottomLeft, children: const [
+                      Padding(
+                        padding: EdgeInsets.all(8.0),
+                        child: Text(
+                          "Stretch",
+                          style: TextStyle(
+                              color: Color.fromRGBO(223, 223, 223, 1),
+                              fontSize: 20),
+                        ),
                       ),
+                    ]),
+                  ),
+                ),
+                GestureDetector(
+                  onTap: () async {
+                    String url =
+                        'https://www.youtube.com/watch?v=vdNztb6crp8&amp;t=255s&amp;ab_channel=AsiaJadeFitness';
+                    await launch(url);
+                  },
+                  child: Container(
+                    padding: const EdgeInsets.all(8),
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20),
+                        image: const DecorationImage(
+                            image: NetworkImage(
+                                "https://firebasestorage.googleapis.com/v0/b/three-dimension-fitness.appspot.com/o/homeCards%2Fnew%204.jpeg?alt=media&token=35eda0e7-bd37-4480-bd56-93040b2f0c9d"),
+                            fit: BoxFit.cover)),
+                    child:
+                        Stack(alignment: Alignment.bottomLeft, children: const [
+                      Padding(
+                        padding: EdgeInsets.all(8.0),
+                        child: Text(
+                          "Stretch",
+                          style: TextStyle(
+                              color: Color.fromRGBO(223, 223, 223, 1),
+                              fontSize: 20),
+                        ),
+                      ),
+                    ]),
+                  ),
+                ),
+                GestureDetector(
+                  onTap: () async {
+                    String url = 'https://www.youtube.com/watch?v=yepMNMzfrCE';
+                    await launch(url);
+                  },
+                  child: Container(
+                    padding: const EdgeInsets.all(8),
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20),
+                        image: const DecorationImage(
+                            image: NetworkImage(
+                                "https://firebasestorage.googleapis.com/v0/b/three-dimension-fitness.appspot.com/o/homeCards%2Fnew%2022.jpg?alt=media&token=f71e78be-0252-492e-a4dd-1ecf81735db6"),
+                            fit: BoxFit.cover)),
+                    child:
+                        Stack(alignment: Alignment.bottomLeft, children: const [
+                      Padding(
+                        padding: EdgeInsets.all(8.0),
+                        child: Text(
+                          "Stretch",
+                          style: TextStyle(
+                              color: Color.fromRGBO(223, 223, 223, 1),
+                              fontSize: 20),
+                        ),
+                      ),
+                    ]),
+                  ),
+                ),
+                GestureDetector(
+                  onTap: () async {
+                    String url = 'https://www.youtube.com/watch?v=vkKCVCZe474';
+                    await launch(url);
+                  },
+                  child: Container(
+                    padding: const EdgeInsets.all(8),
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20),
+                        image: const DecorationImage(
+                            image: NetworkImage(
+                                "https://firebasestorage.googleapis.com/v0/b/three-dimension-fitness.appspot.com/o/homeCards%2Fnew%2027.jpg?alt=media&token=9b6d9227-2a0b-4f85-9347-8057c2843009"),
+                            fit: BoxFit.cover)),
+                    child:
+                        Stack(alignment: Alignment.bottomLeft, children: const [
+                      Padding(
+                        padding: EdgeInsets.all(8.0),
+                        child: Text(
+                          "Stretch",
+                          style: TextStyle(
+                              color: Color.fromRGBO(223, 223, 223, 1),
+                              fontSize: 20),
+                        ),
+                      ),
+                    ]),
+                  ),
+                ),
+                GestureDetector(
+                  onTap: () async {
+                    String url = 'https://www.youtube.com/watch?v=zhFoDNzSTyE';
+                    await launch(url);
+                  },
+                  child: Container(
+                    padding: const EdgeInsets.all(8),
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20),
+                        image: const DecorationImage(
+                            image: NetworkImage(
+                                "https://firebasestorage.googleapis.com/v0/b/three-dimension-fitness.appspot.com/o/homeCards%2Fnew%2026.jpg?alt=media&token=9ecfea17-2e94-47ae-aacd-c33361f75a9f"),
+                            fit: BoxFit.cover)),
+                    child:
+                        Stack(alignment: Alignment.bottomLeft, children: const [
+                      Padding(
+                        padding: EdgeInsets.all(8.0),
+                        child: Text(
+                          "Stretch",
+                          style: TextStyle(
+                              color: Color.fromRGBO(223, 223, 223, 1),
+                              fontSize: 20),
+                        ),
+                      ),
+                    ]),
+                  ),
+                ),
+                GestureDetector(
+                  onTap: () async {
+                    String url = 'https://www.youtube.com/watch?v=KvN4Rw1Ih7A';
+                    await launch(url);
+                  },
+                  child: Container(
+                    padding: const EdgeInsets.all(8),
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20),
+                        image: const DecorationImage(
+                            image: NetworkImage(
+                                "https://firebasestorage.googleapis.com/v0/b/three-dimension-fitness.appspot.com/o/homeCards%2Fnew%2013.jpg?alt=media&token=61fc3d67-e35f-4ea7-bccc-ab9fc0244bae"),
+                            fit: BoxFit.cover)),
+                    child:
+                        Stack(alignment: Alignment.bottomLeft, children: const [
+                      Padding(
+                        padding: EdgeInsets.all(8.0),
+                        child: Text(
+                          "Stretch",
+                          style: TextStyle(
+                              color: Color.fromRGBO(223, 223, 223, 1),
+                              fontSize: 20),
+                        ),
+                      ),
+                    ]),
+                  ),
+                ),
+                GestureDetector(
+                  onTap: () async {
+                    String url = 'https://www.youtube.com/watch?v=Ulduc3QuBXg';
+                    await launch(url);
+                  },
+                  child: Container(
+                    padding: const EdgeInsets.all(8),
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20),
+                        image: const DecorationImage(
+                            image: NetworkImage(
+                                "https://firebasestorage.googleapis.com/v0/b/three-dimension-fitness.appspot.com/o/homeCards%2Fnew%2015.jpg?alt=media&token=637be3a8-78aa-4e05-8ba0-7add01ae7927"),
+                            fit: BoxFit.cover)),
+                    child:
+                        Stack(alignment: Alignment.bottomLeft, children: const [
+                      Padding(
+                        padding: EdgeInsets.all(8.0),
+                        child: Text(
+                          "Stretch",
+                          style: TextStyle(
+                              color: Color.fromRGBO(223, 223, 223, 1),
+                              fontSize: 20),
+                        ),
+                      ),
+                    ]),
+                  ),
+                ),
+                GestureDetector(
+                  onTap: () async {
+                    String url = 'https://www.youtube.com/watch?v=-6oBbHy_zjM';
+                    await launch(url);
+                  },
+                  child: Container(
+                    padding: const EdgeInsets.all(8),
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20),
+                        image: const DecorationImage(
+                            image: NetworkImage(
+                                "https://firebasestorage.googleapis.com/v0/b/three-dimension-fitness.appspot.com/o/homeCards%2Fnew%2019.jpg?alt=media&token=afb64ec1-35a3-4150-a339-fbf571b04b6e"),
+                            fit: BoxFit.cover)),
+                    child:
+                        Stack(alignment: Alignment.bottomLeft, children: const [
+                      Padding(
+                        padding: EdgeInsets.all(8.0),
+                        child: Text(
+                          "Stretch",
+                          style: TextStyle(
+                              color: Color.fromRGBO(223, 223, 223, 1),
+                              fontSize: 20),
+                        ),
+                      ),
+                    ]),
+                  ),
+                ),
+                GestureDetector(
+                  onTap: () async {
+                    String url = 'https://www.youtube.com/watch?v=m3Nsjdx-UY0';
+                    await launch(url);
+                  },
+                  child: Container(
+                    padding: const EdgeInsets.all(8),
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20),
+                        image: const DecorationImage(
+                            image: NetworkImage(
+                                "https://firebasestorage.googleapis.com/v0/b/three-dimension-fitness.appspot.com/o/homeCards%2Fnew%207.jpg?alt=media&token=b89b7e6d-135c-4d93-a576-d6846d709c45"),
+                            fit: BoxFit.cover)),
+                    child:
+                        Stack(alignment: Alignment.bottomLeft, children: const [
+                      Padding(
+                        padding: EdgeInsets.all(8.0),
+                        child: Text(
+                          "Stretch",
+                          style: TextStyle(
+                              color: Color.fromRGBO(223, 223, 223, 1),
+                              fontSize: 20),
+                        ),
+                      ),
+                    ]),
+                  ),
+                ),
+                GestureDetector(
+                  onTap: () async {
+                    String url = 'https://www.youtube.com/watch?v=3YvfRx31xDE';
+                    await launch(url);
+                  },
+                  child: Container(
+                    padding: const EdgeInsets.all(8),
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20),
+                        image: const DecorationImage(
+                            image: NetworkImage(
+                                "https://firebasestorage.googleapis.com/v0/b/three-dimension-fitness.appspot.com/o/homeCards%2Fnew%2021.jpg?alt=media&token=af12434f-8c52-419a-b4b9-5a3c8ff25217"),
+                            fit: BoxFit.cover)),
+                    child:
+                        Stack(alignment: Alignment.bottomLeft, children: const [
+                      Padding(
+                        padding: EdgeInsets.all(8.0),
+                        child: Text(
+                          "Stretch",
+                          style: TextStyle(
+                              color: Color.fromRGBO(223, 223, 223, 1),
+                              fontSize: 20),
+                        ),
+                      ),
+                    ]),
+                  ),
+                ),
+                GestureDetector(
+                  onTap: () async {
+                    String url = 'https://www.youtube.com/watch?v=OtgFcKSywtQ';
+                    await launch(url);
+                  },
+                  child: Container(
+                    padding: const EdgeInsets.all(8),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(20),
+                      image: const DecorationImage(
+                          image: NetworkImage(
+                              "https://firebasestorage.googleapis.com/v0/b/three-dimension-fitness.appspot.com/o/homeCards%2Fnew%205.jpg?alt=media&token=5fd020f8-a2f8-4b22-a1ef-1defe33cbb0b"),
+                          fit: BoxFit.cover),
                     ),
-                  ]),
+                    child:
+                        Stack(alignment: Alignment.bottomLeft, children: const [
+                      Padding(
+                        padding: EdgeInsets.all(8.0),
+                        child: Text(
+                          "Stretch",
+                          style: TextStyle(
+                              color: Color.fromRGBO(223, 223, 223, 1),
+                              fontSize: 20),
+                        ),
+                      ),
+                    ]),
+                  ),
                 ),
               ],
             ),

@@ -5,6 +5,7 @@ import 'dart:async';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:three_dimension_fitness/screens/homeScreen.dart';
+import 'package:three_dimension_fitness/screens/testttt.dart';
 import 'package:three_dimension_fitness/signIn.dart';
 import 'package:three_dimension_fitness/signUp.dart';
 
@@ -58,7 +59,7 @@ class _AuthWidgetState extends State<AuthWidget> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: StreamBuilder<User?>(
-          stream: FirebaseAuth.instance.authStateChanges() ,
+          stream: FirebaseAuth.instance.authStateChanges(),
           builder: (context, snapshot) {
             if (snapshot.connectionState == ConnectionState.waiting) {
               return Center(child: CircularProgressIndicator());
